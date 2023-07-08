@@ -37,4 +37,56 @@ main {
   margin: auto;
   margin-top: 30px;
   border-radius: 12px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+main > p.name {
+  color: white;
+  font-size: 20px;
+  font-family: Montserrat;
+  margin-bottom: 10px;
+}
+main > input.display {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  background-color: rgba(240, 248, 255, 0.073);
+  padding: 8px 0;
+  border-radius: 5px;
+  font-family: Montserrat;
+  width: 100%;
+}
+main > label > p {
+  color: white;
+  font-size: 20px;
+  font-family: Montserrat;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+main > label > input {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  background-color: rgba(240, 248, 255, 0.073);
+  padding: 8px 0;
+  border-radius: 5px;
+  font-family: Montserrat;
+  width: 100%;
+  margin-bottom: 20px;
+}
+main button {
+  display: block;
+  margin: auto;
+  padding: 3px 8px;
+  border-radius: 8px;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+main button:hover {
+  background-color: rgb(23, 20, 42);
+  color: aliceblue;
+  cursor: pointer;
+  border: 1px solid white;
 }/*# sourceMappingURL=App.css.map */

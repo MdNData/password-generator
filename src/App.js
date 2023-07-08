@@ -36,7 +36,17 @@ function App() {
   const GetMain = () => {
     return (
       <main>
-        
+        <p class="name">
+          Password :
+        </p>
+        <input type="text" class="display" placeholder="Password" />
+
+        <label>
+          <p>Number of characters : <br/>(min 1 - max 24)</p>
+          <input type="number" max="24" min="1" placeholder="13" />
+        </label>
+
+        <button>Generate</button>
       </main>
     );
   };
