@@ -19,7 +19,9 @@ function App() {
 
   }
 
-  const header = (
+  //Header container
+  const GetHeader = () => {
+    return (
       <header>
         <h1>
           Password Generator 
@@ -28,12 +30,13 @@ function App() {
           Random, Secure and Free
         </h2>
       </header>
-  );
+    );
+  };
 
   return (
     <div className="App">
       {/* START Header */}
-      {header}
+      <GetHeader />
       {/* END Header */}
 
       {/* START Main */}
