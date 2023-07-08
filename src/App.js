@@ -36,7 +36,7 @@ function App() {
   const GetMain = () => {
     return (
       <main>
-
+        
       </main>
     );
   };
@@ -52,7 +52,9 @@ function App() {
       {/* END Header */}
 
       {/* START Main */}
-      <GetMain />
+      <GetMain 
+
+      />
       {/* END Main */}
 
     </div>
