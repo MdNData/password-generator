@@ -19,30 +19,40 @@ function App() {
 
   }
 
-  //Header container
-  const GetHeader = () => {
+  //Header component
+  const GetHeader = (props) => {
     return (
       <header>
         <h1>
-          Password Generator 
+          {props.mainTitle} 
         </h1>
         <h2>
-          Random, Secure and Free
+          {props.secondTitle}
         </h2>
       </header>
     );
   };
 
-  return (
-    <div className="App">
-      {/* START Header */}
-      <GetHeader />
-      {/* END Header */}
-
-      {/* START Main */}
+  const GetMain = () => {
+    return (
       <main>
 
       </main>
+    );
+  };
+
+  //APP VISUALIZATION AND MAIN CONTAINER
+  return (
+    <div className="App">
+      {/* START Header */}
+      <GetHeader 
+        mainTitle="Password Generator"
+        secondTitle="Random, Secure and Free"
+        />
+      {/* END Header */}
+
+      {/* START Main */}
+      <GetMain />
       {/* END Main */}
 
     </div>
