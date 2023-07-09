@@ -48,7 +48,7 @@ function App() {
       passContainer.value = "Invalid Range ";
     } else {
       let password = '';
-      const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*{}[]()/\\\'"`~,;:.<>';
+      const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*{}[]()/\\\'"~,;:.<>';
       
       for(var i=0; i < nCharacters; i++){
         var rnum = Math.floor(Math.random() * characters.length);
