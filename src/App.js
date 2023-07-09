@@ -33,20 +33,41 @@ function App() {
     );
   };
 
+  //function for the generation of the password
+  const generatePassword = () => {
+
+    const passContainer = document.getElementById("display");
+    const nCharacters = Number(document.getElementById("nChars").value);
+
+    if(nCharacters > 24 || nCharacters < 1) {
+      passContainer.value = "Invalid Range ";
+    } else {
+      let password = '';
+      const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*{}[]()/\\\'"`~,;:.<>';
+      
+      for(var i=0; i < nCharacters; i++){
+        var rnum = Math.floor(Math.random() * characters.length);
+        password += characters.substring(rnum, rnum+1);
+      }
+  
+      passContainer.value = password;
+    }
+  }
+
   const GetMain = () => {
     return (
       <main>
-        <p class="name">
+        <p className="name">
           Password :
         </p>
-        <input type="text" class="display" placeholder="Password" />
+        <input type="text" className="display" placeholder="Password" id="display"/>
 
         <label>
           <p>Number of characters : <br/>(min 1 - max 24)</p>
-          <input type="number" max="24" min="1" placeholder="13" />
+          <input type="number" max="24" min="1" placeholder="13" id="nChars" />
         </label>
 
-        <button>Generate</button>
+        <button onClick={generatePassword}>Generate</button>
       </main>
     );
   };
