@@ -2,23 +2,6 @@ import './App.css';
 
 function App() {
 
-  //Random password generator
-  const GenerateRandomPassword = (length) => {
-    //characters being used
-    let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@!#%^&*$";
-
-    //container for the final string
-    let str = '';
-
-    //for loop to pick the characters
-    for(let i = 0; i < length; i++){
-      str += chars.charAt(Math.floor(Math.random() * chars.length));
-    }
-
-    return str;
-
-  }
-
   //Header component
   const GetHeader = (props) => {
     return (
