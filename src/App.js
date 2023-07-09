@@ -37,7 +37,13 @@ function App() {
   const generatePassword = () => {
 
     const passContainer = document.getElementById("display");
-    const nCharacters = Number(document.getElementById("nChars").value);
+    let nCharacters = Number(document.getElementById("nChars").value);
+
+    console.log(nCharacters);
+
+    if(nCharacters == 0){
+      nCharacters = 13;
+    }
 
     if(nCharacters > 24 || nCharacters < 1) {
       passContainer.value = "Invalid Range ";
