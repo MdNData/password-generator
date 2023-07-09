@@ -39,7 +39,6 @@ function App() {
     const passContainer = document.getElementById("display");
     let nCharacters = Number(document.getElementById("nChars").value);
 
-    console.log(nCharacters);
 
     if(nCharacters == 0){
       nCharacters = 13;
