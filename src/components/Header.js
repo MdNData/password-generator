@@ -1,8 +1,8 @@
-export const Header = () => {
+export const Header = (props) => {
   return (
     <header>
-      <h1>Password Generator</h1>
-      <h2>Random, Secure and Free</h2>
+      <h1>{props.mainTitle}</h1>
+      <h2>{props.secondTitle}</h2>
     </header>
   );
 };
