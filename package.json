@@ -1,10 +1,6 @@
 {
-<<<<<<< HEAD
-  "name": "password-generator-react",
-=======
   "homepage": "http://mdndata.github.io/password-generator",
   "name": "password-generator",
->>>>>>> 74aaec50cbee3f2154ff6fad4adcb96a4817e6dd
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,11 +14,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-<<<<<<< HEAD
-=======
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
->>>>>>> 74aaec50cbee3f2154ff6fad4adcb96a4817e6dd
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -44,11 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-<<<<<<< HEAD
-=======
   },
   "devDependencies": {
     "gh-pages": "^5.0.0"
->>>>>>> 74aaec50cbee3f2154ff6fad4adcb96a4817e6dd
   }
 }

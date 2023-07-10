@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Header } from "./components/Header";
@@ -29,15 +28,3 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 //Render the page
 root.render(<PageContainer />);
-=======
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
->>>>>>> 74aaec50cbee3f2154ff6fad4adcb96a4817e6dd
