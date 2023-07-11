@@ -87,4 +87,13 @@ body main button:hover {
   color: aliceblue;
   cursor: pointer;
   border: 1px solid white;
+}
+
+.download-app {
+  display: block;
+  text-align: center;
+  color: white;
+  margin: 20px 0;
+  font-family: "Archivo Black";
+  font-size: 20px;
 }/*# sourceMappingURL=index.css.map */

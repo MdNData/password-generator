@@ -15,10 +15,17 @@ const PageContainer = () => {
         secondTitle="Random, Secure and Free"
       />
       {/* END Header */}
-      
+
       {/* START Main */}
       <GetMain />
       {/* END Main */}
+
+      <a
+        className="download-app"
+        href="https://codexency.com/apps/com.companyname.password_generator_app_maui.apk"
+      >
+        Download Android App
+      </a>
     </React.Fragment>
   );
 };
